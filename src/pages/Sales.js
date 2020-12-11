@@ -1,9 +1,11 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import Header from '../components/Header';
 
 function Sales() {
-  return <h1>Sales Page</h1>;
+  return (
+    <Header />
+  );
 }
 
 export default Sales;
