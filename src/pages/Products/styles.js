@@ -6,7 +6,6 @@ export const Container = styled.ul`
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     gap: 30px;
-    list-style: none;
 
     li {
         display: flex;

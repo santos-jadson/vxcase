@@ -1,9 +1,9 @@
 import React from 'react'
 
-import { Container } from './styles'
 import { MdAddShoppingCart } from 'react-icons/md'
 
 import productImage from '../../assets/tenis.jpg'
+import { Container } from './styles';
 
 export default function Products() {
     return(
