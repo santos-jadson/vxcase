@@ -1,10 +1,8 @@
 import React from 'react';
 
-import Header from '../components/Header';
-
 function Sales() {
   return (
-    <Header />
+    <h1> Sales</h1>
   );
 }
 
