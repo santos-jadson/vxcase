@@ -16,17 +16,26 @@ export const Container = styled.ul`
         -webkit-box-shadow: -1px 13px 20px -9px rgba(0,0,0,0.18);
         -moz-box-shadow: -1px 13px 20px -9px rgba(0,0,0,0.18);
         box-shadow: -1px 13px 20px -9px rgba(0,0,0,0.18);
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(0.95, 0.95);
+        }
 
         strong {
-            margin-top: 10px;
+            margin: 10px auto;
             font-size: 15px;
             max-width: 90%;
-            color: #333;
+            color: #000;
         }
 
         span {
             font-weight: bold;
-            margin: 10px auto;
+            margin: auto auto 10px;
+
+            > strong { 
+                font-size: 18px;
+            }
         }
 
         img {
