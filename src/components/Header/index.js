@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { MdShoppingBasket } from 'react-icons/md'
+import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 
 import './styles.css'
@@ -8,7 +8,7 @@ import './styles.css'
 function Header() {
     return(
         <header>
-            <h2>Logo</h2>
+            <h2 className="logo">VX CASE</h2>
             <nav>
                 <ul className="navigation">
                     <li className="navigation_link"><Link to="/">Produtos</Link></li>
@@ -17,7 +17,7 @@ function Header() {
             </nav>
             <div className="cart">
                 <Link to="/cart"><strong>Meu carrinho</strong></Link>
-                <MdShoppingBasket size={36} />
+                <AiOutlineShoppingCart size={36} color='#FFF'/>
             </div>
         </header>
     )

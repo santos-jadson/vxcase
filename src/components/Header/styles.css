@@ -1,27 +1,37 @@
 header {
     width: 100%;
-    background-color: hsl(180, 29%, 50%);
+    background-color: #24252A;
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 100px;
 }
 
+.logo, .navigation_link a, strong {
+    color: #FFF;
+}
+
 .navigation {
     width: 200px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .navigation_link {
     list-style: none;
+    padding: 10px;
+    transition: 0.5s;
+    border-bottom: 3px solid transparent
+}
+
+.navigation_link:hover {
+    border-bottom-color: #FFF;
 }
 
 .navigation_link a {
     text-decoration: none;
-    font-size: 18px;
-    color: #000;
+    font-size: 16px;
 }
 
 .cart {
@@ -34,5 +44,4 @@ header {
     text-decoration: none;
     font-size: 14px;
     margin-right: 10px;
-    color: #000;
 }
