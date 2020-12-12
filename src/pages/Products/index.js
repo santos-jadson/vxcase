@@ -24,6 +24,10 @@ export default function Products() {
         const test = cart.products.findIndex(pd => {
             return pd.id === product.id
         })
+
+        let { subTotal } = cart
+        console.log(subTotal)
+
         let array = []
 
         if(test === -1) {
@@ -37,16 +41,24 @@ export default function Products() {
                 quantity: 1,
                 total: product.price
             })
+            subTotal += product.price
         }else {
             array = [...cart.products]
             array[test].quantity++
             array[test].total += array[test].price
+            subTotal += array[test].price 
         }
+
+        console.log(subTotal)
+        
 
         api.patch('/cart', {
             products: array,
+            subTotal,
+            total: subTotal 
         }).then(response => {
             if(response.status === 200) {
+                console.log(response.data)
                 setCart(response.data)
                 alert("Done")
             }
