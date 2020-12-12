@@ -22,6 +22,7 @@ export const CartList = styled.ul`
         -webkit-box-shadow: -1px 13px 20px -9px rgba(0,0,0,0.18);
         -moz-box-shadow: -1px 13px 20px -9px rgba(0,0,0,0.18);
         box-shadow: -1px 13px 20px -9px rgba(0,0,0,0.18);
+        
 
         strong {
             font-size: 15px;
@@ -44,7 +45,6 @@ export const CartList = styled.ul`
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-
 
             input {
                 width: 50px;

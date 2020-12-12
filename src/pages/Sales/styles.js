@@ -24,7 +24,12 @@ export const SalesList = styled.ul`
         -webkit-box-shadow: 0px 15px 15px -4px hsla(180,29%,50%,20%);
         -moz-box-shadow: 0px 15px 15px -4px hsla(180,29%,50%,20%);
         box-shadow: 0px 15px 15px -4px hsla(180,29%,50%,20%);
-        
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(0.98, 0.98);
+        }
+
         h1 {
             font-size: 19px;
         }
