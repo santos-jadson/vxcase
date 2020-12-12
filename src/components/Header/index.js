@@ -16,8 +16,10 @@ function Header() {
                 </ul>
             </nav>
             <div className="cart">
-                <Link to="/cart"><strong>Meu carrinho</strong></Link>
-                <AiOutlineShoppingCart size={36} color='#FFF'/>
+                <Link to="/cart">
+                    <strong>Meu carrinho</strong> 
+                    <AiOutlineShoppingCart size={36} color='#FFF'/>
+                </Link>
             </div>
         </header>
     )
