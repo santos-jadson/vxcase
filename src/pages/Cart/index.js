@@ -34,7 +34,15 @@ function Cart() {
       quantityItems: qty,
       items: cart.products
     }).then(response => {
-      if(response.status === 201){ 
+      if(response.status === 201){
+        api.patch('/cart', {
+          products: [],
+          subTotal: 0,
+          total: 0 
+        }).then(response => {
+          setCart(response.data)
+        })
+        
         alert("Venda registrada com sucesso")
       } else {
         alert("Erro! tente novamente mais tarde")
@@ -64,6 +72,7 @@ function Cart() {
                       name="quantity" 
                       id="quantity"
                       value={product.quantity}
+                      readOnly
                     />
                     <span className="total-value">{`Total: R$ ${product.total} `}</span>
                   </div>
