@@ -26,7 +26,6 @@ export default function Products() {
         })
 
         let { subTotal } = cart
-        console.log(subTotal)
 
         let array = []
 
@@ -47,14 +46,10 @@ export default function Products() {
             array = [...cart.products]
             array[test].quantity++
             array[test].total += array[test].price
-            console.log(array[test].total)
             array[test].total = Math.round( array[test].total * 1e2 ) / 1e2;
             subTotal += array[test].price 
             subTotal = Math.round( subTotal * 1e2 ) / 1e2;
         }
-
-        console.log(subTotal)
-        
 
         api.patch('/cart', {
             products: array,
@@ -62,7 +57,6 @@ export default function Products() {
             total: subTotal 
         }).then(response => {
             if(response.status === 200) {
-                console.log(response.data)
                 setCart(response.data)
                 alert("Done")
             }

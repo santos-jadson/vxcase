@@ -16,7 +16,6 @@ function Cart() {
     })
   }, [])
 
-
   function handleSubmit() {
     let qty = 0
     let delivery = 0
@@ -48,67 +47,73 @@ function Cart() {
         alert("Erro! tente novamente mais tarde")
       }
     }) 
-
   }
 
-  return (
-    <MainContainer>
-      <CartList>
-        { cart && cart.products.length > 0 ? cart.products.map( product => {
-            return (
-              <li key={product.id}>
-
-                <div className="product-image">
-                  <img src={product.image} alt={product.title} />
-                </div>
-
-                <div className="product-content">
-                  <strong>{product.title}</strong>
-                  <div className="second-line">
-                    <span className="parcial-value">{`R$ ${product.price}`}</span>
-                    <input 
-                      className="quantity" 
-                      type="number" 
-                      name="quantity" 
-                      id="quantity"
-                      value={product.quantity}
-                      readOnly
-                    />
-                    <span className="total-value">{`Total: R$ ${product.total} `}</span>
-                  </div>
-                  <div className="third-line">
-                    <span className="delivery-time"> {`${product.deliveryTime} Dias`} </span>
-                    <BsTrash size={22} className="trash" color="#000" cursor="pointer" />
-                  </div>
-                </div>
-
-              </li>
-            )
-          }) : <h1>Seu carrinho está vazio</h1>
-        }
-      </CartList>
-
-      <OrderBox>
-          <h1>Pedido</h1>
-          <div className="subtotal">
-            <span>Subtotal</span>
-            <span>{cart ? `R$ ${cart.subTotal}` : `R$ 00,00 ` }</span>
-          </div>
-          <div className="promo-code">
-            <input type="text" placeholder="Inserir Cupom"/>
-          </div>
-          <div className="subtotal">
-            <span>Desconto</span>
-            <span>R$ 0.00</span>
-          </div>
-          <div className="total">
-            <span>Total</span>
-            <span>{cart ? `R$ ${cart.subTotal}` : `R$ 00,00 ` }</span>
-          </div>
-          <button type="button" onClick={handleSubmit}>Finalizar Venda</button>
-      </OrderBox>
-    </MainContainer>
-  )
+  if(!cart) {
+    return <h1 style={{"margin": "50px auto auto 50px"}}>Carregando...</h1>
+  }else
+    if(cart.length === 0) {
+      return <h1 style={{"margin": "50px auto auto 50px"}}>Seu carrinho está vazio</h1>
+    }else{
+      return (
+        <MainContainer>
+          <CartList>
+            { cart && cart.products.length > 0 ? cart.products.map( product => {
+                return (
+                  <li key={product.id}>
+    
+                    <div className="product-image">
+                      <img src={product.image} alt={product.title} />
+                    </div>
+    
+                    <div className="product-content">
+                      <strong>{product.title}</strong>
+                      <div className="second-line">
+                        <span className="parcial-value">{`R$ ${product.price}`}</span>
+                        <input 
+                          className="quantity" 
+                          type="number" 
+                          name="quantity" 
+                          id="quantity"
+                          value={product.quantity}
+                          readOnly
+                        />
+                        <span className="total-value">{`Total: R$ ${product.total} `}</span>
+                      </div>
+                      <div className="third-line">
+                        <span className="delivery-time"> {`${product.deliveryTime} Dias`} </span>
+                        <BsTrash size={22} className="trash" color="#000" cursor="pointer" />
+                      </div>
+                    </div>
+    
+                  </li>
+                )
+              }) : <h1>Seu carrinho está vazio</h1>
+            }
+          </CartList>
+    
+          <OrderBox>
+              <h1>Pedido</h1>
+              <div className="subtotal">
+                <span>Subtotal</span>
+                <span>{cart ? `R$ ${cart.subTotal}` : `R$ 00,00 ` }</span>
+              </div>
+              <div className="promo-code">
+                <input type="text" placeholder="Inserir Cupom"/>
+              </div>
+              <div className="subtotal">
+                <span>Desconto</span>
+                <span>R$ 0.00</span>
+              </div>
+              <div className="total">
+                <span>Total</span>
+                <span>{cart ? `R$ ${cart.subTotal}` : `R$ 00,00 ` }</span>
+              </div>
+              <button type="button" onClick={handleSubmit}>Finalizar Venda</button>
+          </OrderBox>
+        </MainContainer>
+      )
+    }
 }
 
 export default Cart;

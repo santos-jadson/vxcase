@@ -11,13 +11,12 @@ function Sale() {
     useEffect(() => {
         api.get(`/sales/${id}`).then(response => {
             setSale(response.data)
-            console.log(sale)
         })
     },[id])
 
     if(!sale) {
         return(
-            <h1>Loading...</h1>
+            <h1 style={{"margin": "50px auto auto 50px"}}>Carregando...</h1>
         )
     }else{
         return (

@@ -9,12 +9,21 @@
         "deliveryTime": 10,
         "quantity": 1,
         "total": 179.9
+      },
+      {
+        "id": 3,
+        "title": "Tênis Adidas Duramo Lite 2.0",
+        "price": 219.9,
+        "image": "https://i.ibb.co/MCMYwgJ/item3.png",
+        "deliveryTime": 10,
+        "quantity": 1,
+        "total": 219.9
       }
     ],
-    "subTotal": 179.9,
+    "subTotal": 399.8,
     "promoCode": "",
     "discount": 0,
-    "total": 179.9
+    "total": 399.8
   },
   "sales": [
     {
