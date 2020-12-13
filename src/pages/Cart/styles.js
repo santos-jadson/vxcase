@@ -22,7 +22,11 @@ export const CartList = styled.ul`
         -webkit-box-shadow: -1px 13px 20px -9px rgba(0,0,0,0.18);
         -moz-box-shadow: -1px 13px 20px -9px rgba(0,0,0,0.18);
         box-shadow: -1px 13px 20px -9px rgba(0,0,0,0.18);
-        
+        transition: 1s;
+
+        &:hover {
+            transform: scale(0.99, 0.99)
+        }
 
         strong {
             font-size: 15px;
@@ -101,6 +105,11 @@ export const OrderBox = styled.aside`
     -webkit-box-shadow: -1px 13px 20px -9px rgba(0,0,0,0.18);
     -moz-box-shadow: -1px 13px 20px -9px rgba(0,0,0,0.18);
     box-shadow: -1px 13px 20px -9px rgba(0,0,0,0.18);
+    transition: 1s;
+
+    &:hover {
+            transform: scale(0.99, 0.99)
+    }
 
     h1 {
         align-self: center;
