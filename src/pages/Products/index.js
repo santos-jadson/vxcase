@@ -42,11 +42,15 @@ export default function Products() {
                 total: product.price
             })
             subTotal += product.price
+            subTotal = Math.round( subTotal * 1e2 ) / 1e2;
         }else {
             array = [...cart.products]
             array[test].quantity++
             array[test].total += array[test].price
+            console.log(array[test].total)
+            array[test].total = Math.round( array[test].total * 1e2 ) / 1e2;
             subTotal += array[test].price 
+            subTotal = Math.round( subTotal * 1e2 ) / 1e2;
         }
 
         console.log(subTotal)

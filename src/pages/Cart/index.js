@@ -68,7 +68,7 @@ function Cart() {
                     <span className="total-value">{`Total: R$ ${product.total} `}</span>
                   </div>
                   <div className="third-line">
-                    <span className="delivery-time"> 20 Dias </span>
+                    <span className="delivery-time"> {`${product.deliveryTime} Dias`} </span>
                     <BsTrash size={22} className="trash" color="#000" cursor="pointer" />
                   </div>
                 </div>
@@ -83,7 +83,7 @@ function Cart() {
           <h1>Pedido</h1>
           <div className="subtotal">
             <span>Subtotal</span>
-            <span>{cart ? `R$ ${cart.subTotal.toFixed(2)}` : `R$ 00,00 ` }</span>
+            <span>{cart ? `R$ ${cart.subTotal}` : `R$ 00,00 ` }</span>
           </div>
           <div className="promo-code">
             <input type="text" placeholder="Inserir Cupom"/>
@@ -94,7 +94,7 @@ function Cart() {
           </div>
           <div className="total">
             <span>Total</span>
-            <span>{cart ? `R$ ${cart.subTotal.toFixed(2)}` : `R$ 00,00 ` }</span>
+            <span>{cart ? `R$ ${cart.subTotal}` : `R$ 00,00 ` }</span>
           </div>
           <button type="button" onClick={handleSubmit}>Finalizar Venda</button>
       </OrderBox>
