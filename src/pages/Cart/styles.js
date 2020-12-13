@@ -28,10 +28,27 @@ export const CartList = styled.ul`
             transform: scale(0.99, 0.99)
         }
 
+        img {
+            align-self: center;
+            max-width: 250px;
+        }
+
+        .product-content {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         strong {
             font-size: 15px;
             max-width: 90%;
             color: #333;
+            margin: 20px auto;
+        }
+
+        .second-line span {
+            margin: auto 20px;
         }
 
         span {
@@ -39,55 +56,29 @@ export const CartList = styled.ul`
             margin: 10px auto;
         }
 
-        img {
-            align-self: center;
-            max-width: 250px;
+        input {
+            width: 50px;
+            margin-left: 10px;
+            -moz-appearance:textfield;
         }
 
-        .itens-icons {
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .third-line {
+            margin-top: 20px;
             display: flex;
             flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-
-            input {
-                width: 50px;
-                margin-left: 10px;
-            }
+            align-items: center
         }
 
-
-        button {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            background-color: hsl(180, 8%, 28%);
-            border: 0;
-            border-radius: 4px;
-            margin-top: auto;
-            margin-bottom: 25px;
-            cursor: pointer;
-
-            transition: 0.2s;
-
-            div {
-                padding: 10px;
-                border-right: 1px solid transparent;
-                border-bottom-left-radius: 4px;
-                border-top-left-radius: 4px;
-                background-color: hsl(180, 14%, 20%);
-                margin-right: 5px;
-            }
-
-            span {
-                margin-right: 10px;
-                color: rgba(255,255,255,0.9);
-            }
-
-            &:hover {
-                opacity: 0.9;
-            }
+        .trash {
+            margin-left: 30px;
         }
+        
     }
 `
 

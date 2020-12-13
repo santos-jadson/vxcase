@@ -49,15 +49,30 @@ function Cart() {
         { cart && cart.products.length > 0 ? cart.products.map( product => {
             return (
               <li key={product.id}>
-                <img src={product.image} alt={product.title} />
 
-                <strong>{product.title}</strong>
-                <span>{`R$ ${product.price}`}</span>
-                <div className="itens-icons">
-                  <BsTrash size={22} color="#000" cursor="pointer" />
-                  <input type="number" name="quantity" id="quantity" min="1" max="99" defaultValue={product.quantity}/>
+                <div className="product-image">
+                  <img src={product.image} alt={product.title} />
                 </div>
-                <span>{`Total: R$ ${product.total} `}</span>
+
+                <div className="product-content">
+                  <strong>{product.title}</strong>
+                  <div className="second-line">
+                    <span className="parcial-value">{`R$ ${product.price}`}</span>
+                    <input 
+                      className="quantity" 
+                      type="number" 
+                      name="quantity" 
+                      id="quantity"
+                      value={product.quantity}
+                    />
+                    <span className="total-value">{`Total: R$ ${product.total} `}</span>
+                  </div>
+                  <div className="third-line">
+                    <span className="delivery-time"> 20 Dias </span>
+                    <BsTrash size={22} className="trash" color="#000" cursor="pointer" />
+                  </div>
+                </div>
+
               </li>
             )
           }) : <h1>Seu carrinho está vazio</h1>

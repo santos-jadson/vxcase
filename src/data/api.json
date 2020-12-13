@@ -16,8 +16,8 @@
         "price": 139.9,
         "image": "https://i.ibb.co/2sMbqGW/item2.png",
         "deliveryTime": 10,
-        "quantity": 2,
-        "total": 279.8
+        "quantity": 3,
+        "total": 419.70000000000005
       },
       {
         "id": 6,
@@ -38,10 +38,10 @@
         "total": 439.8
       }
     ],
-    "subTotal": 1259.3000000000002,
+    "subTotal": 1399.2000000000003,
     "promoCode": "",
     "discount": 0,
-    "total": 1259.3000000000002
+    "total": 1399.2000000000003
   },
   "sales": [
     {
