@@ -1,10 +1,20 @@
 {
   "cart": {
-    "products": [],
-    "subTotal": 0,
+    "products": [
+      {
+        "id": 1,
+        "title": "Tênis de Caminhada Leve Confortável",
+        "price": 179.9,
+        "image": "https://i.ibb.co/ykJDYn8/item1.png",
+        "deliveryTime": 10,
+        "quantity": 1,
+        "total": 179.9
+      }
+    ],
+    "subTotal": 179.9,
     "promoCode": "",
     "discount": 0,
-    "total": 0
+    "total": 179.9
   },
   "sales": [
     {
