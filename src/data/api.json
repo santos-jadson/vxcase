@@ -2,28 +2,19 @@
   "cart": {
     "products": [
       {
-        "id": 1,
-        "title": "Tênis de Caminhada Leve Confortável",
-        "price": 179.9,
-        "image": "https://i.ibb.co/ykJDYn8/item1.png",
-        "deliveryTime": 10,
-        "quantity": 1,
-        "total": 179.9
-      },
-      {
         "id": 3,
         "title": "Tênis Adidas Duramo Lite 2.0",
         "price": 219.9,
         "image": "https://i.ibb.co/MCMYwgJ/item3.png",
         "deliveryTime": 10,
-        "quantity": 1,
-        "total": 219.9
+        "quantity": 2,
+        "total": 439.8
       }
     ],
-    "subTotal": 399.8,
+    "subTotal": 439.8,
     "promoCode": "",
     "discount": 0,
-    "total": 399.8
+    "total": 439.8
   },
   "sales": [
     {

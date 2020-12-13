@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { BsTrash } from 'react-icons/bs'
 import { v4 as uuidv4 } from 'uuid'
 
-
 import api from '../../services/api'
 
 import { CartList, OrderBox, MainContainer } from './styles';
@@ -49,6 +48,18 @@ function Cart() {
     }) 
   }
 
+  function handleDelete(product) {
+    const c = cart
+    c.subTotal -= product.total
+    c.subTotal = Math.round( c.subTotal * 1e2 ) / 1e2;
+    c.total = c.subTotal
+    const index = c.products.indexOf(product)
+    c.products.splice(index, 1 )
+    setCart(c)
+    api.patch('/cart', cart)
+    window.location.reload()
+  }
+
   if(!cart) {
     return <h1 style={{"margin": "50px auto auto 50px"}}>Carregando...</h1>
   }else
@@ -82,7 +93,13 @@ function Cart() {
                       </div>
                       <div className="third-line">
                         <span className="delivery-time"> {`${product.deliveryTime} Dias`} </span>
-                        <BsTrash size={22} className="trash" color="#000" cursor="pointer" />
+                        <BsTrash 
+                          size={22} 
+                          className="trash" 
+                          color="#000" 
+                          cursor="pointer" 
+                          onClick={() => handleDelete(product)}
+                        />
                       </div>
                     </div>
     
