@@ -7,8 +7,8 @@
         "price": 179.9,
         "image": "https://i.ibb.co/ykJDYn8/item1.png",
         "deliveryTime": 10,
-        "quantity": 1,
-        "total": 179.9
+        "quantity": 2,
+        "total": 359.8
       },
       {
         "id": 2,
@@ -16,27 +16,121 @@
         "price": 139.9,
         "image": "https://i.ibb.co/2sMbqGW/item2.png",
         "deliveryTime": 10,
+        "quantity": 2,
+        "total": 279.8
+      },
+      {
+        "id": 6,
+        "title": "Tênis de Caminhada Leve Confortável",
+        "price": 179.9,
+        "image": "https://i.ibb.co/fnG2B7p/item6.png",
+        "deliveryTime": 10,
         "quantity": 1,
-        "total": 139.9
+        "total": 179.9
+      },
+      {
+        "id": 3,
+        "title": "Tênis Adidas Duramo Lite 2.0",
+        "price": 219.9,
+        "image": "https://i.ibb.co/MCMYwgJ/item3.png",
+        "deliveryTime": 10,
+        "quantity": 2,
+        "total": 439.8
       }
     ],
-    "subTotal": 319.8,
+    "subTotal": 1259.3000000000002,
     "promoCode": "",
     "discount": 0,
-    "total": 319.8
+    "total": 1259.3000000000002
   },
   "sales": [
     {
-      "id": 1,
-      "totalPrice": 300.7,
+      "id": "4817d3ef-de54-4e71-b203-4043cbf99298",
+      "totalPrice": 1039.4,
+      "deliveryTime": 10,
+      "date": "02/12/1997",
+      "quantityItems": 6,
       "items": [
         {
           "id": 1,
-          "qtd": 1
+          "title": "Tênis de Caminhada Leve Confortável",
+          "price": 179.9,
+          "image": "https://i.ibb.co/ykJDYn8/item1.png",
+          "deliveryTime": 10,
+          "quantity": 2,
+          "total": 359.8
         },
         {
-          "id": 4,
-          "qtd": 1
+          "id": 2,
+          "title": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
+          "price": 139.9,
+          "image": "https://i.ibb.co/2sMbqGW/item2.png",
+          "deliveryTime": 10,
+          "quantity": 2,
+          "total": 279.8
+        },
+        {
+          "id": 6,
+          "title": "Tênis de Caminhada Leve Confortável",
+          "price": 179.9,
+          "image": "https://i.ibb.co/fnG2B7p/item6.png",
+          "deliveryTime": 10,
+          "quantity": 1,
+          "total": 179.9
+        },
+        {
+          "id": 3,
+          "title": "Tênis Adidas Duramo Lite 2.0",
+          "price": 219.9,
+          "image": "https://i.ibb.co/MCMYwgJ/item3.png",
+          "deliveryTime": 10,
+          "quantity": 1,
+          "total": 219.9
+        }
+      ]
+    },
+    {
+      "id": "64bbf8a0-0f20-4f55-864e-16c6672172be",
+      "totalPrice": 1259.3000000000002,
+      "deliveryTime": 10,
+      "date": "02/12/1997",
+      "quantityItems": 7,
+      "items": [
+        {
+          "id": 1,
+          "title": "Tênis de Caminhada Leve Confortável",
+          "price": 179.9,
+          "image": "https://i.ibb.co/ykJDYn8/item1.png",
+          "deliveryTime": 10,
+          "quantity": 2,
+          "total": 359.8
+        },
+        {
+          "id": 2,
+          "title": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
+          "price": 139.9,
+          "image": "https://i.ibb.co/2sMbqGW/item2.png",
+          "deliveryTime": 10,
+          "quantity": 2,
+          "total": 279.8
+        },
+        {
+          "id": 6,
+          "title": "Tênis de Caminhada Leve Confortável",
+          "price": 179.9,
+          "image": "https://i.ibb.co/fnG2B7p/item6.png",
+          "deliveryTime": 10,
+          "quantity": 1,
+          "total": 179.9
+        },
+        {
+          "id": 3,
+          "title": "Tênis Adidas Duramo Lite 2.0",
+          "price": 219.9,
+          "image": "https://i.ibb.co/MCMYwgJ/item3.png",
+          "deliveryTime": 10,
+          "quantity": 2,
+          "total": 439.8
         }
       ]
     }
