@@ -78,4 +78,14 @@ export const Container = styled.ul`
 
     }
 
+    @media(max-width: 900px) {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    @media(max-width: 700px) {
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+    }
+
 `

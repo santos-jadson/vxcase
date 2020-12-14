@@ -4,6 +4,12 @@ export const MainContainer = styled.main`
 width: 90%;
 display: grid;
 grid-template-areas: 'card card card order';
+
+    @media(max-width: 980px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 `
 
 export const CartList = styled.ul`
@@ -78,7 +84,76 @@ export const CartList = styled.ul`
         .trash {
             margin-left: 30px;
         }
-        
+    }
+
+    @media(max-width: 980px) {
+        margin: 50px auto 0;
+    }
+
+    @media(max-width: 950px) {
+        li {
+            strong {
+                font-size: 13px;
+            }
+
+            span {
+                font-size: 10px;
+            }
+        }
+    }
+
+    @media(max-width: 810px) {
+        li {
+            flex-direction: column;
+
+            .product-content {
+                width: 90%;
+            }
+
+            strong {
+                font-size: 16px;
+            }
+
+            span {
+                font-size: 13px;
+            }
+        }
+    }
+
+    @media(max-width: 560px) {
+        li {
+            strong {
+                font-size: 13px;
+            }
+
+            span {
+                font-size: 10px;
+            }
+
+            .second-line span {
+                margin: auto 10px;
+            }
+        }
+    }
+
+    @media(max-width: 430px) {
+        li {
+            strong {
+                font-size: 11px;
+            }
+
+            img {
+                max-width: 180px;
+            }
+
+            span {
+                font-size: 8px;
+            }
+
+            .second-line span {
+                margin: auto 10px;
+            }
+        }
     }
 `
 
@@ -129,6 +204,24 @@ export const OrderBox = styled.aside`
         &:hover {
             background-color: #2E806D;
             
+        }
+    }
+
+    @media(max-width: 1140px) {
+        margin-left: 72%;
+    }
+
+    @media(max-width: 1000px) {
+        margin-left: 71%;
+    }
+
+    @media(max-width: 980px) {
+        width: 65%;
+        position: static;
+        margin: auto;
+
+        input {
+            width: 100%;
         }
     }
 `

@@ -36,6 +36,60 @@ export const OrderContainer = styled.div`
         }
     }
 
+    @media(max-width: 1110px) {
+        .sale-info {
+            h2 {
+                font-size: 15px;
+            }
+
+            h3 {
+                font-size: 12px;
+            }
+        }
+    }
+
+    @media(max-width: 950px) {
+        .sale-info {
+            h2 {
+                font-size: 13px;
+            }
+
+            h3 {
+                font-size: 10px;
+            }
+        }
+    }
+
+    @media(max-width: 810px) {
+        padding: 35px;
+        flex-direction: column;
+        
+        .sale-info {
+            margin-bottom: 25px;
+
+            h2 {
+                font-size: 16px;
+            }
+
+            h3 {
+                margin-top: 10px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    @media(max-width: 810px) {
+        .sale-info {
+            h2 {
+                font-size: 14px;
+            }
+
+            h3 {
+                font-size: 13px;
+            }
+        }
+    }
+
 `
 
 export const CartList = styled.ul`
@@ -108,6 +162,71 @@ export const CartList = styled.ul`
         .trash {
             margin-left: 30px;
         }
-        
+    }
+
+    @media(max-width: 950px) {
+        li {
+            strong {
+                font-size: 13px;
+            }
+
+            span {
+                font-size: 10px;
+            }
+        }
+    }
+
+    @media(max-width: 810px) {
+        li {
+            flex-direction: column;
+
+            .product-content {
+                width: 90%;
+            }
+
+            strong {
+                font-size: 16px;
+            }
+
+            span {
+                font-size: 13px;
+            }
+        }
+    }
+
+    @media(max-width: 560px) {
+        li {
+            strong {
+                font-size: 13px;
+            }
+
+            span {
+                font-size: 10px;
+            }
+
+            .second-line span {
+                margin: auto 10px;
+            }
+        }
+    }
+
+    @media(max-width: 430px) {
+        li {
+            strong {
+                font-size: 11px;
+            }
+
+            img {
+                max-width: 180px;
+            }
+
+            span {
+                font-size: 8px;
+            }
+
+            .second-line span {
+                margin: auto 10px;
+            }
+        }
     }
 `

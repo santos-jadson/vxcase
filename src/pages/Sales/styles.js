@@ -86,4 +86,71 @@ export const SalesList = styled.ul`
         }
     }
 
+
+    @media(max-width: 1080px) {
+        li{
+            h1 {
+                font-size: 16px;
+            }
+
+            .sale-info {
+                h2 {
+                    font-size: 14px
+                }
+
+                h3 {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 950px) {
+        li{
+            h1 {
+                font-size: 14px;
+            }
+
+            .sale-info {
+                h2 {
+                    font-size: 12px
+                }
+
+                h3 {
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 850px) {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap: 30px;
+
+        li{
+            flex-direction: column;
+
+            h1 {
+                color:transparent;
+            }
+
+            .sale-info {
+                margin-bottom: 20px;
+
+                h2 {
+                    font-size: 16px
+                }
+
+                h3 {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 650px) {
+        grid-template-columns:repeat(1, 1fr);
+    }
+
 `

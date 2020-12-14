@@ -38,10 +38,6 @@ header {
     font-size: 16px;
 }
 
-.cart {
-    
-}
-
 .cart a {
     display: flex;
     flex-direction: row;
@@ -60,4 +56,42 @@ header {
 
 .cart strong:hover {
     border-bottom-color: #FFF;
+}
+
+
+@media(max-width: 450px) {
+    .logo {
+        font-size: 15px;
+    }
+
+    .navigation_link a {
+        font-size: 12px;
+    }
+
+    .cart a {
+        font-size: 9px;
+    }
+}
+
+@media(max-width: 380px) {
+    .logo {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .navigation {
+        width: 170px;
+    }
+
+    .navigation_link a {
+        font-size: 10px;
+    }
+
+    .cart {
+        margin-right: 10px;
+    }
+
+    .cart strong {
+        font-size: 7px;
+    }
 }

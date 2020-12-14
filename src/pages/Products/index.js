@@ -26,12 +26,10 @@ export default function Products() {
         })
 
         let { subTotal } = cart
-
         let array = []
 
         if(test === -1) {
-            array = [...cart.products]
-            array.push({
+            array = [...cart.products, {
                 id: product.id,
                 title: product.title,
                 price: product.price,
@@ -39,7 +37,7 @@ export default function Products() {
                 deliveryTime: product.deliveryTime,
                 quantity: 1,
                 total: product.price
-            })
+            }]
             subTotal += product.price
             subTotal = Math.round( subTotal * 1e2 ) / 1e2;
         }else {

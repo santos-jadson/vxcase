@@ -9,12 +9,30 @@
         "deliveryTime": 10,
         "quantity": 2,
         "total": 439.8
+      },
+      {
+        "id": 1,
+        "title": "Tênis de Caminhada Leve Confortável",
+        "price": 179.9,
+        "image": "https://i.ibb.co/ykJDYn8/item1.png",
+        "deliveryTime": 10,
+        "quantity": 2,
+        "total": 359.8
+      },
+      {
+        "id": 2,
+        "title": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
+        "price": 139.9,
+        "image": "https://i.ibb.co/2sMbqGW/item2.png",
+        "deliveryTime": 10,
+        "quantity": 1,
+        "total": 139.9
       }
     ],
-    "subTotal": 439.8,
+    "subTotal": 939.5,
     "promoCode": "",
     "discount": 0,
-    "total": 439.8
+    "total": 939.5
   },
   "sales": [
     {
