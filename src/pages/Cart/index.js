@@ -17,6 +17,11 @@ function Cart() {
   }, [])
 
   function handleSubmit() {
+    if(cart.products.length < 1) {
+      alert("Seu carrinho está vazio")
+      return
+    }
+    
     let qty = 0
     let delivery = 0
 
@@ -41,7 +46,6 @@ function Cart() {
         }).then(response => {
           setCart(response.data)
         })
-        
         alert("Venda registrada com sucesso")
       } else {
         alert("Erro! tente novamente mais tarde")

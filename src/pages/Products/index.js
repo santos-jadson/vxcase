@@ -56,7 +56,7 @@ export default function Products() {
         }).then(response => {
             if(response.status === 200) {
                 setCart(response.data)
-                alert("Done")
+                alert("Produto inserido no carrinho!")
             }
         })
     }
