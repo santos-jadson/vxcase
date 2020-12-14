@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { BsTrash } from 'react-icons/bs'
 import { v4 as uuidv4 } from 'uuid'
+import { format } from 'date-fns'
 
 import api from '../../services/api'
 
@@ -28,7 +29,7 @@ function Cart() {
       id: uuidv4(),
       totalPrice: cart.total,
       deliveryTime: delivery,
-      date: "02/12/1997",
+      date: format(new Date(), 'dd/MM/yyyy'),
       quantityItems: qty,
       items: cart.products
     }).then(response => {

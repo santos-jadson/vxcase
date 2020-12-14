@@ -6,7 +6,8 @@
     "discount": 0,
     "total": 0
   },
-  "sales": [],
+  "sales": [
+  ],
   "products": [
     {
       "id": 1,
