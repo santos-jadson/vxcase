@@ -1,290 +1,117 @@
 {
   "cart": {
-    "products": [
-      {
-        "id": 3,
-        "title": "Tênis Adidas Duramo Lite 2.0",
-        "price": 219.9,
-        "image": "https://i.ibb.co/MCMYwgJ/item3.png",
-        "deliveryTime": 10,
-        "quantity": 2,
-        "total": 439.8
-      },
-      {
-        "id": 1,
-        "title": "Tênis de Caminhada Leve Confortável",
-        "price": 179.9,
-        "image": "https://i.ibb.co/ykJDYn8/item1.png",
-        "deliveryTime": 10,
-        "quantity": 2,
-        "total": 359.8
-      },
-      {
-        "id": 2,
-        "title": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
-        "price": 139.9,
-        "image": "https://i.ibb.co/2sMbqGW/item2.png",
-        "deliveryTime": 10,
-        "quantity": 1,
-        "total": 139.9
-      }
-    ],
-    "subTotal": 939.5,
+    "products": [],
+    "subTotal": 0,
     "promoCode": "",
     "discount": 0,
-    "total": 939.5
+    "total": 0
   },
-  "sales": [
-    {
-      "id": "4817d3ef-de54-4e71-b203-4043cbf99298",
-      "totalPrice": 1039.4,
-      "deliveryTime": 10,
-      "date": "02/12/1997",
-      "quantityItems": 6,
-      "items": [
-        {
-          "id": 1,
-          "title": "Tênis de Caminhada Leve Confortável",
-          "price": 179.9,
-          "image": "https://i.ibb.co/ykJDYn8/item1.png",
-          "deliveryTime": 10,
-          "quantity": 2,
-          "total": 359.8
-        },
-        {
-          "id": 2,
-          "title": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
-          "price": 139.9,
-          "image": "https://i.ibb.co/2sMbqGW/item2.png",
-          "deliveryTime": 10,
-          "quantity": 2,
-          "total": 279.8
-        },
-        {
-          "id": 6,
-          "title": "Tênis de Caminhada Leve Confortável",
-          "price": 179.9,
-          "image": "https://i.ibb.co/fnG2B7p/item6.png",
-          "deliveryTime": 10,
-          "quantity": 1,
-          "total": 179.9
-        },
-        {
-          "id": 3,
-          "title": "Tênis Adidas Duramo Lite 2.0",
-          "price": 219.9,
-          "image": "https://i.ibb.co/MCMYwgJ/item3.png",
-          "deliveryTime": 10,
-          "quantity": 1,
-          "total": 219.9
-        }
-      ]
-    },
-    {
-      "id": "64bbf8a0-0f20-4f55-864e-16c6672172be",
-      "totalPrice": 1259.3000000000002,
-      "deliveryTime": 10,
-      "date": "02/12/1997",
-      "quantityItems": 7,
-      "items": [
-        {
-          "id": 1,
-          "title": "Tênis de Caminhada Leve Confortável",
-          "price": 179.9,
-          "image": "https://i.ibb.co/ykJDYn8/item1.png",
-          "deliveryTime": 10,
-          "quantity": 2,
-          "total": 359.8
-        },
-        {
-          "id": 2,
-          "title": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
-          "price": 139.9,
-          "image": "https://i.ibb.co/2sMbqGW/item2.png",
-          "deliveryTime": 10,
-          "quantity": 2,
-          "total": 279.8
-        },
-        {
-          "id": 6,
-          "title": "Tênis de Caminhada Leve Confortável",
-          "price": 179.9,
-          "image": "https://i.ibb.co/fnG2B7p/item6.png",
-          "deliveryTime": 10,
-          "quantity": 1,
-          "total": 179.9
-        },
-        {
-          "id": 3,
-          "title": "Tênis Adidas Duramo Lite 2.0",
-          "price": 219.9,
-          "image": "https://i.ibb.co/MCMYwgJ/item3.png",
-          "deliveryTime": 10,
-          "quantity": 2,
-          "total": 439.8
-        }
-      ]
-    },
-    {
-      "id": "f78b1c29-5587-49fa-90d5-55849a7ef84b",
-      "totalPrice": 1399.2000000000003,
-      "deliveryTime": 10,
-      "date": "02/12/1997",
-      "quantityItems": 8,
-      "items": [
-        {
-          "id": 1,
-          "title": "Tênis de Caminhada Leve Confortável",
-          "price": 179.9,
-          "image": "https://i.ibb.co/ykJDYn8/item1.png",
-          "deliveryTime": 10,
-          "quantity": 2,
-          "total": 359.8
-        },
-        {
-          "id": 2,
-          "title": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
-          "price": 139.9,
-          "image": "https://i.ibb.co/2sMbqGW/item2.png",
-          "deliveryTime": 10,
-          "quantity": 3,
-          "total": 419.70000000000005
-        },
-        {
-          "id": 6,
-          "title": "Tênis de Caminhada Leve Confortável",
-          "price": 179.9,
-          "image": "https://i.ibb.co/fnG2B7p/item6.png",
-          "deliveryTime": 10,
-          "quantity": 1,
-          "total": 179.9
-        },
-        {
-          "id": 3,
-          "title": "Tênis Adidas Duramo Lite 2.0",
-          "price": 219.9,
-          "image": "https://i.ibb.co/MCMYwgJ/item3.png",
-          "deliveryTime": 10,
-          "quantity": 2,
-          "total": 439.8
-        }
-      ]
-    },
-    {
-      "id": "710b2978-fe3c-4c94-9ebd-c699413a2075",
-      "totalPrice": 679.6,
-      "deliveryTime": 10,
-      "date": "02/12/1997",
-      "quantityItems": 4,
-      "items": [
-        {
-          "id": 1,
-          "title": "Tênis de Caminhada Leve Confortável",
-          "price": 179.9,
-          "image": "https://i.ibb.co/ykJDYn8/item1.png",
-          "deliveryTime": 10,
-          "quantity": 3,
-          "total": 539.7
-        },
-        {
-          "id": 2,
-          "title": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
-          "price": 139.9,
-          "image": "https://i.ibb.co/2sMbqGW/item2.png",
-          "deliveryTime": 10,
-          "quantity": 1,
-          "total": 139.9
-        }
-      ]
-    },
-    {
-      "id": "bae5c770-4d08-447a-b97e-050c7964797b",
-      "totalPrice": 679.6,
-      "deliveryTime": 10,
-      "date": "02/12/1997",
-      "quantityItems": 4,
-      "items": [
-        {
-          "id": 1,
-          "title": "Tênis de Caminhada Leve Confortável",
-          "price": 179.9,
-          "image": "https://i.ibb.co/ykJDYn8/item1.png",
-          "deliveryTime": 10,
-          "quantity": 3,
-          "total": 539.7
-        },
-        {
-          "id": 2,
-          "title": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
-          "price": 139.9,
-          "image": "https://i.ibb.co/2sMbqGW/item2.png",
-          "deliveryTime": 10,
-          "quantity": 1,
-          "total": 139.9
-        }
-      ]
-    },
-    {
-      "id": "97743756-b845-46a8-873f-57d4c59db943",
-      "totalPrice": 219.9,
-      "deliveryTime": 10,
-      "date": "02/12/1997",
-      "quantityItems": 1,
-      "items": [
-        {
-          "id": 5,
-          "title": "Tênis Adidas Duramo Lite 2.0",
-          "price": 219.9,
-          "image": "https://i.ibb.co/j6hbvLq/item5.png",
-          "deliveryTime": 10,
-          "quantity": 1,
-          "total": 219.9
-        }
-      ]
-    }
-  ],
+  "sales": [],
   "products": [
     {
       "id": 1,
-      "title": "Tênis de Caminhada Leve Confortável",
-      "price": 179.9,
-      "deliveryTime": 10,
+      "title": "Selfie Flash Clip VX Case",
+      "price": 190,
+      "deliveryTime": 4,
       "image": "https://i.ibb.co/ykJDYn8/item1.png"
     },
     {
       "id": 2,
-      "title": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
-      "price": 139.9,
-      "deliveryTime": 10,
+      "title": "Caixa de Som Bluetooth VX Case Hurricane",
+      "price": 499,
+      "deliveryTime": 16,
       "image": "https://i.ibb.co/2sMbqGW/item2.png"
     },
     {
       "id": 3,
-      "title": "Tênis Adidas Duramo Lite 2.0",
-      "price": 219.9,
+      "title": "Caixa de Som Bluetooth Floatie Speaker",
+      "price": 59,
       "deliveryTime": 10,
       "image": "https://i.ibb.co/MCMYwgJ/item3.png"
     },
     {
       "id": 4,
-      "title": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
-      "price": 139.9,
-      "deliveryTime": 10,
+      "title": "Bateria Externa Diamond",
+      "price": 159,
+      "deliveryTime": 25,
       "image": "https://i.ibb.co/pb2QV6y/item4.png"
     },
     {
       "id": 5,
-      "title": "Tênis Adidas Duramo Lite 2.0",
+      "title": "Caixa de Som Bluetooth VX Case Portátil",
       "price": 219.9,
-      "deliveryTime": 10,
+      "deliveryTime": 1,
       "image": "https://i.ibb.co/j6hbvLq/item5.png"
     },
     {
       "id": 6,
-      "title": "Tênis de Caminhada Leve Confortável",
-      "price": 179.9,
-      "deliveryTime": 10,
+      "title": "Cabo para iPhone/iPad USB Lightning Dragon",
+      "price": 130,
+      "deliveryTime": 5,
       "image": "https://i.ibb.co/fnG2B7p/item6.png"
+    },
+    {
+      "id": 7,
+      "title": "Carregador Wireless VX Case",
+      "price": 185,
+      "deliveryTime": 15,
+      "image": "https://i.ibb.co/3NsM1mz/carregador-wireless.png"
+    },
+    {
+      "id": 8,
+      "title": "Carregador de Mesa para iPhone Dock Station Lightning",
+      "price": 245,
+      "deliveryTime": 13,
+      "image": "https://i.ibb.co/5hpN8qW/aqqqq.png"
+    },
+    {
+      "id": 9,
+      "title": "Suporte de Cintura Tailor para Smartphones",
+      "price": 150,
+      "deliveryTime": 13,
+      "image": "https://i.ibb.co/Jr60M8V/asdasd.png"
+    },
+    {
+      "id": 10,
+      "title": "Kit de Lentes 3 em 1 para Smartphones",
+      "price": 40,
+      "deliveryTime": 30,
+      "image": "https://i.ibb.co/BGvkQL9/bcvbfdb.png"
+    },
+    {
+      "id": 11,
+      "title": "Carregador de Parede com 2 portas USB 1 Type-C",
+      "price": 65,
+      "deliveryTime": 19,
+      "image": "https://i.ibb.co/wRjPYk3/carrega.png"
+    },
+    {
+      "id": 12,
+      "title": "Tripé de Mesa VX Case para Smartphones e Câmeras",
+      "price": 140,
+      "deliveryTime": 22,
+      "image": "https://i.ibb.co/gJG7TRX/cxvvds.png"
+    },
+    {
+      "id": 13,
+      "title": "Case de Silicone para AirPods Pro",
+      "price": 50,
+      "deliveryTime": 2,
+      "image": "https://i.ibb.co/F8gCXG3/trrth.png"
+    },
+    {
+      "id": 14,
+      "title": "Fone Bluetooth VX Case Professional Run",
+      "price": 330,
+      "deliveryTime": 6,
+      "image": "https://i.ibb.co/ykxt275/wefweffqwq.png"
+    },
+    {
+      "id": 15,
+      "title": "Case para AirPods VX Case",
+      "price": 47,
+      "deliveryTime": 7,
+      "image": "https://i.ibb.co/RHMXPmY/wefwefwe.png"
     }
   ]
 }
